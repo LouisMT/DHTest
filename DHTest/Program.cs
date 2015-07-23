@@ -13,11 +13,12 @@ namespace DHTest
 
         private static void Main(string[] args)
         {
-            var random = new Random();
+            Console.Title = "DHTest";
             Console.BackgroundColor = DefaultConsoleBackgroundColor;
             Console.ForegroundColor = DefaultConsoleForegroundColor;
             Console.Clear();
 
+            var random = new Random(1337);
             Console.WriteLine("Using ^{0} and %{1}...", Pow, Mod);
 
             while (true)
